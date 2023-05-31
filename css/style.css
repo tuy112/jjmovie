@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+/* header part */
+#header {
+    background-color: #99ccff;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 30px 0;
+}
+#header h1 {
+    font-size: 23px;
+    margin-right: 40px;
+}
+
+/* main - search part */
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+    border-bottom: 1px solid #999;
+}
+.search label {
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.search input {
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 4px;
+}
+.search button {
+    background: none;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 4px;
+}
+.search button:hover {
+    background: #333;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* main - cardList part */
+.cardList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+.movieCard {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+    background-color: #b8f8fb;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    justify-self: center;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.movieCard h3 {
+    margin-bottom: 20px;
+}
+.movieCard p {
+    line-height: 1.7;
+}
+.movieCard p.rate {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+/* footer */
+#footer {
+    position: fixed;
+    bottom: 3px;
+    right: 6px;
+}
+#footer p {
+    font-weight: 600;
+    font-size: 10px;
+}
