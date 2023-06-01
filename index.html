@@ -15,10 +15,10 @@
 
     <main>
         <!-- 영화 검색 -->
-        <form class="search" onsubmit="handleSearch(event)">
-            <label>영화 검색 : </label>
-            <input type="text" id="searchInput" placeholder="영화제목을 입력해주세요^^" />
-            <button type="submit" id="searchBtn">검색</button>
+        <form class="search" onsubmit="movieSearch()">
+            <label id="search">영화 검색 : </label>
+            <input type="text" id="searchInput" placeholder="영화제목을 입력해주세요^^" onkeyup="keyevent(this);" />
+            <button type="submit" id="searchBtn" >검색</button>
         </form>
 
         <!-- 카드 파트 -->
