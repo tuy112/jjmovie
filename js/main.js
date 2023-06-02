@@ -4,13 +4,15 @@ function movieSearch() {
     let btn = document.getElementById('searchBtn').value;
     alert('검색 중 이니까 잠시만 기다려주시와요~^^');
 
-    // inputBox 값 입력 후 엔터!
-    document.addEventListener("searchInput"), function (event) {
-      if (event.keyCode === 13) {
-          alert('검색 중 이니까 잠시만 기다려주시와요~^^');
-      }
-  };
+    
 }
+
+// inputBox 값 입력 후 엔터!
+document.addEventListener("searchInput"), function (event) {
+  if (event.keyCode === 13) {
+      alert('검색 중 이니까 잠시만 기다려주시와요~^^');
+  }
+};
 
 
 // movie api -> 이 api를 어떻게 출력하는지 방법을 모르겠습니다..
