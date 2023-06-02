@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내가 본 영화,드라마 콜렉션</title>
+    <title>JJmovie - 최고 평점 영화 컬렉션</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- header -->
     <header id="header">
-        <h1>내가 본 영화 + 드라마 컬렉션</h1>
+        <h1>JJmovie - 최고 평점 영화 컬렉션</h1>
     </header>
 
     <main>
         <!-- 영화 검색 -->
-        <form class="search" onsubmit="movieSearch()">
+        <form class="search" action="./index.html" method="POST" onsubmit="movieSearch()">
             <label id="search">영화 검색 : </label>
-            <input type="text" id="searchInput" placeholder="영화제목을 입력해주세요^^" onkeyup="keyevent(this);" />
+            <input type="text" id="searchInput" placeholder="영화제목을 입력해주세요^^" required />
             <button type="submit" id="searchBtn" >검색</button>
         </form>
 

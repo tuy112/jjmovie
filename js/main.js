@@ -1,17 +1,19 @@
-// search
+// search btn
 function movieSearch() {
-    let search = document.getElementById()
+    let search = document.getElementById('searchInput').value;
+    let btn = document.getElementById('searchBtn').value;
+    alert('검색 중 이니까 잠시만 기다려주시와요~^^');
+
+    // inputBox 값 입력 후 엔터!
+    document.addEventListener("searchInput"), function (event) {
+      if (event.keyCode === 13) {
+          alert('검색 중 이니까 잠시만 기다려주시와요~^^');
+      }
+  };
 }
 
-// inputBox 값 입력 후 엔터!
-document.addEventListener("#searchInput"), function (event) {
-    if (event.keyCode === 13) {
-        alert('검색 중 입니다. 잠시만 기다려주셩^^');
-    }
-};
 
-
-// movie api
+// movie api -> 이 api를 어떻게 출력하는지 방법을 모르겠습니다..
 const options = {
     method: 'GET',
     headers: {
@@ -26,5 +28,4 @@ const options = {
     .catch(err => console.error(err));
 
 
-// 최종적으로 함수가 출력되는 공간
-keyevent();
+
