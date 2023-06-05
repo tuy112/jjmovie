@@ -62,23 +62,33 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
     background-color: #b8f8fb;
     margin: 20px;
-    padding: 20px;
+    padding: 30px;
     width: 300px;
     justify-self: center;
     border-radius: 10px;
     cursor: pointer;
     user-select: none;
+    position: relative;
+}
+.movieCard img {
+    width: 250px; 
+    height: 300px;
+    margin-bottom: 30px;
 }
 .movieCard h3 {
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 .movieCard p {
     line-height: 1.7;
 }
 .movieCard p.rate {
-    margin-top: 15px;
     font-weight: 600;
     font-size: 13px;
+    position: absolute;
+    bottom: 7px; 
+    right: 20px;
 }
 
 
