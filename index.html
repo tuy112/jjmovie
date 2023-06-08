@@ -11,26 +11,16 @@
 <body>
     <!-- header -->
     <header id="header">
-        <h1>JakSim3 <span class="intro">최고 평점 영화 컬렉션</span></h1>
-        <!-- 언어 선택 -->
-        <div class="dropBox">
-            <button type="button" class="naBtn" id="nation">국가</button>
-            <div class="dropDown hidden">
-              <button type="button" id="nationBtn">한국</button>
-              <button type="button" id="nationBtn">미국</button>
-              <button type="button" id="nationBtn">중국</button>
-              <button type="button" id="nationBtn">일본</button>
-            </div>
-        </div>
+        <h1>JJMovie <span class="intro">최고 평점 영화 컬렉션</span></h1>
     </header>
 
     <!-- main -->
     <main>
         <!-- 영화 검색 -->
-        <form class="search" action="./index.html" method="POST" onsubmit="movieSearch()">
+        <form class="search" action="./index.html" method="POST">
             <label id="search">영화 검색 : </label>
             <input type="text" id="searchInput" placeholder="영화제목을 입력해주세요^^" required />
-            <button type="submit" id="searchBtn" >검색</button>
+            <button type="submit" id="searchBtn" onclick="movieSearch()" >검색</button>
         </form>
 
         <!-- 카드 파트 -->
